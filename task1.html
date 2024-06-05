@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+
+/* 1. Write a JavaScript program that accept two integers and
+ * display the larger.Go to the editor */
+
+/******* Start Your Code *********/
+  
+
+ function fun(x,y){
+
+    if(x>y)
+    console.log ("x is greater than y")
+    else if (y > x) 
+        console.log("y is greater than x");
+    else 
+        console.log("x and y are equal");
+    
+
+ }
+
+fun(55,8);
+fun (5,8)
+fun(5,5)
+  
+
+ /******* End Your Code ********* */
+
+
+
+/* 2. Write a JavaScript conditional statement to find the sign
+ of product of three numbers. Display an alert box with the 
+ specified sign. Go to the editor 
+Sample numbers : 3, -7, 2 
+Output : The sign is - */
+/******* Start Your Code *********/
+
+
+let x=3;
+let y=-7;
+let z=2;
+if( (x*y*z)>0)
+window.alert ('The sign is + ')
+
+// else if
+// window.alert ('The sign is - ')
+
+else 
+    // window.alert('The product is zero');
+
+
+
+
+
+ /******* End Your Code ********* */
+
+
+
+
+
+
+
+/* 3. Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the result. Go to the editor 
+Sample numbers : 0, -1, 4 
+Output : 4, 0, -1 */
+/******* Start Your Code *********/
+var arr = [0,-1,4] ;
+
+
+arr.sort();
+arr.reverse();
+
+console.log(arr)
+// window.alert(arr)
+ /******* End Your Code ********* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*4. Write a JavaScript conditional statement to find the largest of five numbers. 
+Display an alert box to show the result. Go to the editor 
+Sample numbers : -5, -2, -6, 0, -1 
+Output : 0 */
+
+/******* Start Your Code *********/
+var array = [-5, -2, -6, 0, -1];
+let num = array[0];
+
+for (let i = 1; i < array.length; i++) {
+    if (array[i] > num) {
+        num = array[i];
+    }
+}
+
+console.log("The largest number is:", num);
+
+
+ /******* End Your Code ********* */
+
+
+
+ /* 5.Write the if statement to display "Hello World" if E is greater than O, otherwise alert "Goodbye".*/
+/******* Start Your Code *********/
+
+
+let E =10;
+let O = 5;
+  if (E>O){
+  console.log("Hello World")}
+else
+
+{console.log("Goodbye")}
+
+
+
+ /******* End Your Code ********* */
+
+
+
+
+
+</script>
+
+
+
+
+</head>
+<body>
+    
+
+
+</body>
+</html>
