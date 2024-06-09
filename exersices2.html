@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function Grade(x) {
+    if (x >= 90 && x <= 100) {
+        return "A";
+    } else if (x >= 80 && x <= 89) {
+        return "B";
+    } else if (x >= 70 && x <= 79) {
+        return "C";
+    } else if (x >= 60 && x <= 69) {
+        return "D";
+    } else if (x >= 50 && x <= 59) {
+        return "E";
+    } else if (x < 50) {
+        return "Fail";
+    } else {
+        return "Invalid rate";
+    }
+}
+
+
+
+console.log(Grade(45));  // Output: Fail
+console.log(Grade(55));  // Output: E
+console.log(Grade(65));  // Output: D
+console.log(Grade(75));  // Output: C
+console.log(Grade(85));  // Output: B
+console.log(Grade(95));  // Output: A
+console.log(Grade(105)); // Output: Invalid rate
+    </script>
+</body>
+</html>
