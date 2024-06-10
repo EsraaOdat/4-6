@@ -92,7 +92,7 @@ function double(7) {            //parameter
   return 2 * 7;
 }
 
-function double('7') {
+function double('7') {      //parameter  
   return 2 * 'x';            // 'x' string 
 }
 */
@@ -185,6 +185,8 @@ console.log("please come back after  " + (20-age) +" years to get one")
 canIGetADrivingLicense(21)
 canIGetADrivingLicense(17)
 canIGetADrivingLicense(20)
+canIGetADrivingLicense(11)
+
 
 
 
@@ -203,10 +205,14 @@ Ex: sameLength("tree","car")
 => false
 */
 
+function sameLength(x, y) {
+    if (x.length == y.length) 
+    { console.log(true);    }
+    else { console.log(false);  }
+}
 
-
-
-
+sameLength("tree","clue")
+sameLength("tree","car")
 
 
 /*
@@ -291,6 +297,47 @@ Ex: shorterString("air","tr","car","github","by")
 => by
 
 */
+function shorterString(A, B, C, D, E) {
+    let shortest = A;
+
+    if (B.length <= shortest.length) {
+        shortest = B;
+    }
+
+    if (C.length <= shortest.length) {
+        shortest = C;
+    }
+
+    if (D.length <= shortest.length) {
+        shortest = D;
+    }
+
+    if (E.length <= shortest.length) {
+        shortest = E;
+    }
+    console.log(shortest) ;
+}
+
+
+shorterString("air","school","car","by","github")
+// => by
+
+shorterString("air","tr","car","by","github")
+// => tr
+
+shorterString("by","tr","car","air","github")
+// => by
+
+shorterString("air","by","car","school","github")
+// => by
+
+ shorterString("air","tr","by","car","github")
+// => by
+
+Ex: shorterString("air","tr","car","github","by")
+// => by
+
+
 
 /*
 
@@ -309,7 +356,31 @@ Ex: longerString("air","schoo","car","github")
 
 try all the cases (change the order of the longestString)
 */
+function longerString(A, B, C, D) {
+    let longest = A;
 
+    if (B.length > longest.length) {
+        longest = B;
+    }
+
+    if (C.length > longest.length) {
+        longest = C;
+    }
+
+    if (D.length > longest.length) {
+        longest = D;
+    }
+
+   console.log(longest) ;
+}
+
+
+
+longerString("air","school","car","github")
+// => school
+
+longerString("air","schoo","car","github")
+// => github
 /*
 
 
@@ -436,6 +507,9 @@ Ex: randomNumber()
 => 0.475
 
 */
+function randomNumber() {
+  return Math.random();
+}
 
 /*
 
@@ -453,7 +527,11 @@ Ex: randomBetweenNumbers(3,100)
 => 23
 
 */
-
+function randomBetweenNumbers(x, y) {
+  return Math.random() * (y - x) + x;
+}
+console.log(randomBetweenNumbers(1, 8));
+console.log(randomBetweenNumbers(3, 100));
 
 /*
 22
